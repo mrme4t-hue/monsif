@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mosif stor | متجر الألبسة</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">mosif stor</div>
+        <ul class="nav-links">
+          <li><a href="#collections">التشكيلات</a></li>
+          <li><a href="#new">جديدنا</a></li>
+          <li><a href="#offers">عروض</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn ghost">تسجيل الدخول</button>
+          <button class="btn primary">إنشاء حساب</button>
+          <div class="cart">
+            <span>السلة</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </div>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="tag">أزياء الموسم</p>
+          <h1>أناقة يومية لكل إطلالة مع mosif stor</h1>
+          <p>
+            اكتشف تشكيلة ألبسة عصرية للرجال والنساء والأطفال، مع توصيل سريع وجودة
+            عالية.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary">تسوق الآن</button>
+            <button class="btn outline">استكشف المجموعات</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>+1200</strong>
+              <span>قطعة مميزة</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>خدمة عملاء</span>
+            </div>
+            <div>
+              <strong>99%</strong>
+              <span>رضا العملاء</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>اختيار هذا الأسبوع</h3>
+          <p>طقم كاجوال بلون رملي مع خصم 20%</p>
+          <button class="btn primary">أضف إلى السلة</button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="collections">
+        <div class="section-title">
+          <h2>التشكيلات الرئيسية</h2>
+          <p>اختيارات مصممة لتناسب كل الأوقات والمناسبات.</p>
+        </div>
+        <div class="grid collections">
+          <article class="collection-card">
+            <h3>مجموعة نسائية</h3>
+            <p>فساتين، بلايز، وأطقم رسمية للمناسبات.</p>
+            <button class="btn outline">تسوق الآن</button>
+          </article>
+          <article class="collection-card">
+            <h3>مجموعة رجالية</h3>
+            <p>قمصان، بناطيل، وسترات بتصاميم عصرية.</p>
+            <button class="btn outline">تسوق الآن</button>
+          </article>
+          <article class="collection-card">
+            <h3>مجموعة أطفال</h3>
+            <p>خامات مريحة وألوان مبهجة لأصغر الأبطال.</p>
+            <button class="btn outline">تسوق الآن</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section highlight" id="new">
+        <div class="section-title">
+          <h2>جديد mosif stor</h2>
+          <p>تصاميم وصلت حديثًا لتجدد خزانة ملابسك.</p>
+        </div>
+        <div class="grid products">
+          <article class="product-card">
+            <div class="product-info">
+              <h3>جاكيت دنيم كلاسيكي</h3>
+              <p>متوفر بثلاثة ألوان مع قصة مريحة.</p>
+            </div>
+            <div class="product-footer">
+              <span>320 ر.س</span>
+              <button class="btn small" data-add="جاكيت دنيم كلاسيكي">أضف للسلة</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-info">
+              <h3>فستان سهرة حريري</h3>
+              <p>إطلالة أنيقة مع تفاصيل لامعة.</p>
+            </div>
+            <div class="product-footer">
+              <span>540 ر.س</span>
+              <button class="btn small" data-add="فستان سهرة حريري">أضف للسلة</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-info">
+              <h3>طقم رياضي عملي</h3>
+              <p>مثالي للتمارين اليومية وخامة قابلة للتنفس.</p>
+            </div>
+            <div class="product-footer">
+              <span>260 ر.س</span>
+              <button class="btn small" data-add="طقم رياضي عملي">أضف للسلة</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="offers">
+        <div class="section-title">
+          <h2>عروض خاصة</h2>
+          <p>وفر أكثر مع باقات خصم موسمية.</p>
+        </div>
+        <div class="offer">
+          <div>
+            <h3>خصم حتى 35% على تشكيلة الشتاء</h3>
+            <p>استخدم الكود <strong>MOSIF35</strong> عند الدفع.</p>
+          </div>
+          <button class="btn primary">تسوق العروض</button>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-title">
+          <h2>ابقَ على تواصل</h2>
+          <p>اشترك لتصلك أحدث الإصدارات والتنبيهات.</p>
+        </div>
+        <form class="newsletter">
+          <input type="email" placeholder="البريد الإلكتروني" required />
+          <button class="btn primary" type="submit">اشترك الآن</button>
+        </form>
+        <div class="support">
+          <div>
+            <h4>خدمة العملاء</h4>
+            <p>متاحون عبر الدردشة المباشرة من 9 صباحًا إلى 11 مساءً.</p>
+          </div>
+          <div>
+            <h4>الشحن والتوصيل</h4>
+            <p>توصيل سريع لجميع المدن خلال 2-4 أيام عمل.</p>
+          </div>
+          <div>
+            <h4>الإرجاع السهل</h4>
+            <p>سياسة إرجاع مرنة خلال 14 يومًا.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>mosif stor</h3>
+        <p>متجر إلكتروني متخصص بالألبسة العصرية بجودة عالية.</p>
+      </div>
+      <div>
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li>سياسة الخصوصية</li>
+          <li>الشروط والأحكام</li>
+          <li>الأسئلة الشائعة</li>
+        </ul>
+      </div>
+      <div>
+        <h4>تابعنا</h4>
+        <ul>
+          <li>انستغرام</li>
+          <li>تيك توك</li>
+          <li>تويتر</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
